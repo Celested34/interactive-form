@@ -46,15 +46,19 @@
 
         //loop over the element children
         for (let i = 0; i < shirtColor.length; i++){
-            
+            if () {
+
+            }else {
+
+            }
         }
         
         }
 
         
-    ){
+    )
 
-    } 
+    
 
 
 
@@ -84,12 +88,20 @@
         
     })
 
-    
-
-   
-
 
 //The "Payment Info" section
+
+    //create variables for the elements
+    let payment = document.querySelector('#payment');
+    let creditCard = document.querySelector('#credit-card');
+    let paypal = document.querySelector('#paypal');
+    let bitcoin = document.querySelector('#bitcoin');
+
+    //hide paypal and bitcoin variables
+    paypal.style.display = "none";
+    bitcoin.style.display = "none";
+
+
 
 
 //Form Validation section
