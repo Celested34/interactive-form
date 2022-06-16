@@ -214,7 +214,7 @@
             yesValid(activityBox);
        }
 
-       if (payment.value === 'credit-card') {
+       if () {
            
            if(!creditCardIsValid()) {
                e.preventDefault();
