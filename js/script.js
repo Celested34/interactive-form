@@ -159,8 +159,8 @@
 
         //Credit Card must contain 13-16 digit credit card number with no dashes
         function creditCardIsValid() {
-            let creditCardValue = creditCard.value;
-            let creditCardValid = /^[0-9]{13-16}$/.test(creditCardValue)
+            let creditCardValue = cardNumber.value;
+            let creditCardValid = /^\d{13}\d?\d?\d?$/.test(creditCardValue)
             return creditCardValid;
         };
 
@@ -191,7 +191,8 @@
         field.parentNode.lastElementChild.style.display = "none"
     }
 
-    //create a submit event for form
+    //create a submit event for form 
+    //validate error message
     form.addEventListener('submit', (e) => {
        if (!nameIsValid()){
            e.preventDefault();
@@ -218,9 +219,9 @@
            
            if(!creditCardIsValid()) {
                e.preventDefault();
-               notValid(creditCard);
+               notValid(cardNumber);
             } else {
-            yesValid(creditCard);
+            yesValid(cardNumber);
            }
            
            if(!zipIsValid()) {
